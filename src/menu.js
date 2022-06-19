@@ -9,7 +9,7 @@ export default function (container) {
     const menuContainer = document.createElement('div');
 
     const items = [
-        {name: 'Spagheti', src: spaghetti},
+        {name: 'Spaghetti', src: spaghetti},
         {name: 'Burger', src: burger},
         {name: 'Kebab', src: kebab},
         {name: 'Salad', src: salad},

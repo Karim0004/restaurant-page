@@ -13,12 +13,16 @@ module.exports = {
 				use: ['html-loader']
 			},
 			{
-				test: /\.(png|jpg|gif|svg)$/,
+				test: /\.(png|jpg|gif|jpeg|svg)$/,
 				use: {
-					loader: 'file-loader',
+					loader: 'img-optimize-loader',
 					options: {
 						name: '[name].[hash].[ext]',
-						outputPath: 'assets'
+						outputPath: 'assets',
+						compress: {
+							webp: true,
+							mode: 'high'
+						}
 					}
 				}
 			}
